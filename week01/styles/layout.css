@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header h4 {
+    background-color: rgb(149, 80, 45);
+    padding-bottom: 40px;
+    padding-top: 5px;
+    color: beige;
+}
+ul {
+    display: flex;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgb(58, 36, 18);
+    color: beige;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+body section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 250px;
+}
+body p {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+section main {
+    background-color: rgb(212, 173, 105);
+    height: 100%;
+}
+footer {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color: rgb(152, 97, 42);
+    color: beige;
+    text-align: center;
+
+}
