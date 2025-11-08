@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+header {
+    background-color: rgb(166, 122, 11);
+    color: beige;
+
+}
+header span {
+    display: block;
+    text-align: center;
+    font-size: medium;
+    padding: 18px
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: rgb(121, 88, 2);  
+}
+nav a {
+    text-decoration: none;  
+    color: antiquewhite;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: #f8b7b7;
+    transform: scale(1.1);
+  }
+main {
+    display: grid;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+.card h3 {
+    background-color: rgb(166, 122, 11);
+    color: beige;
+    padding: 20px;   
+    border-radius: 8px 8px 0 0;
+    text-align: center; 
+    margin-bottom: 50px;
+}
+.card h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+.card {
+    border: 2px solid rgb(120, 0, 0); 
+    padding: 1.5rem; 
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    max-width: 900px; 
+    margin: 2rem auto;
+}
+#flag-section {
+    display: flex;
+    gap: 1rem;          
+    max-width: 900px;
+    margin: 2rem auto;
+    align-items: flex-start;
+}
+#person {
+    width: 125px;
+    height: auto;
+    float: right;
+    border-radius: 10px;    
+} 
+#flag-wrap {
+    text-align: center;
+    flex-shrink: 0;          
+    width: 150px; 
+}
+#flag {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+#flag-info {
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+footer {
+    background-color: rgb(166, 122, 11);
+    color: beige;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 100px;
+}
