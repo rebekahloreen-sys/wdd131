@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebekah Gardner">
+    <meta name="description" content="My favorite place I want to visit">
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Italy</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 700px)" srcset="images/hero-large.webp">
+
+            <img class="hero" src="images/hero-small.webp" alt="Hero image">
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <ul class="titles">
+                
+                <li>Area:</li>
+                <li>Population:</li>
+                <li>Capital:</li>
+                <li>Currency:</li>
+                <li>Time Zone:</li>
+                <li>Calling Code:</li>
+                <li>Internet TLD:</li>
+            </ul>
+            <ul class="contents-1">
+                <li>116,631 mi²</li>
+                <li>59,070,399</li>
+                <li>Rome</li>
+                <li>The Euro: €</li>
+                <li>CEST</li>
+                <li>+39</li>
+                <li>.it</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2 class="weather-title">Weather</h2>
+            <img src="images/weather.svg" alt="Weather picture" class="weather-img">
+            <ul class="titles">
+                <li>Tempurature:</li>
+                <li>Conditions:</li>
+                <li>Wind:</li>
+                <li>Wind Chill:</li>
+            </ul>
+            <ul class="contents-2">
+                <li>8 °C</li>
+                <li>Partly Cloudy</li>
+                <li>21 km/h</li>
+                <li> <span id="windChill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> - Rebekah Gardner - Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

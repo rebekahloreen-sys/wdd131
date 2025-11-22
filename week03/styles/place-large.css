@@ -1,0 +1,46 @@
+@media screen and (min-width: 700px) {
+
+    .weather-title::after {
+        content: " ⛅";
+        display: inline-block;
+    
+    }
+    .weather-img {
+        display: none;
+    }
+
+    #data {
+        position: absolute;
+        left: 50px;
+        top: 200px;
+        background-color: rgba(255, 255, 255, 0.85);
+        list-style: none;
+        padding: 10px;
+    }
+    #data h2 {
+        align-items: left;
+        background-color: rgba(207, 51, 60);
+        color: white;
+    }
+    #weather {
+        position: absolute;
+        list-style: none;
+        right: 50px;
+        bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.85);
+        list-style: none;
+        padding: 10px;
+
+    }
+    #weather h2 {
+        background-color: rgba(68, 150, 76);
+        color: white;
+    }
+    .titles {
+        list-style: none;
+    }
+    footer {
+        margin: 0;
+    }
+    
+}
