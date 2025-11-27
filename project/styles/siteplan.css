@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #feebd8;
+    --secondary-color: #b50042;
+    --accent-color-1: #402103;
+    --accent-color-2: #fccfcf;
+}
+h1, h2, h3 {
+    font-family: 'Lobster Two', cursive;
+}
+
+p, li {
+    font-family: 'Nunito', sans-serif;
+}
+header, footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+}
+main {
+    background-color: var(--primary-color);
+    color: var(--accent-color-1);
+}
