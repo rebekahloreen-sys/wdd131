@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: rgb(223, 223, 223);
+    --secondary-color: rgb(144, 144, 144);
+    --accent-color: rgb(65, 65, 65);
+    --accent-color-2: rgb(110, 23, 23); 
+}
+header {
+    background-color: var(--accent-color-2);
+    color: wheat;
+    text-align: center;
+    padding: 20px;
+}
+form {
+    margin: 20px;
+    border: 2px solid var(--accent-color);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px;
+    border-radius: 2px;
+}
+select {
+    height: 44px;
+    font-size: 0.8rem;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+}
+
+.rating-buttons {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.rating-buttons label {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.rating-buttons input[type="radio"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="date"] {
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+#italics {
+    font-style: italic;
+}
+#features-section {
+    padding-bottom: 20px;
+}
+.optional {
+    font-size: 0.8rem;
+    color: rgb(35, 0, 139);
+}
+
+input[type="submit"] {
+    width: 83%;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+    
+}
+
+footer {
+    background-color: var(--accent-color-2);
+    text-align: center;
+    padding: 20px;
+    color: wheat;
+
+}

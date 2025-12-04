@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Form project</title>
+    <meta name="author" content="Rebekah Gardner">
+</head>
+<body>
+    <header>
+        <h2>Product Review</h2>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label> 
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Choose a Product...</option>
+            </select>
+
+            <section id="rating-section">
+                <p>Overall Rating</p>
+
+                <div class="rating-buttons">
+                    <label for="one">⭐︎</label>
+                    <label for="two">⭐︎⭐︎</label>
+                    <label for="three">⭐︎⭐︎⭐︎</label>
+                    <label for="four">⭐︎⭐︎⭐︎⭐︎</label>
+                    <label for="five">⭐︎⭐︎⭐︎⭐︎⭐︎</label>
+
+
+                    <input type="radio" id="one" name="rating" value="one" required>
+                    <input type="radio" id="two" name="rating" value="two">
+                    <input type="radio" id="three" name="rating" value="three">
+                    <input type="radio" id="four" name="rating" value="four">
+                    <input type="radio" id="five" name="rating" value="five">
+                </div>
+            </section>
+
+            <label for="installation">Date of Installation</label> 
+            <input type="date" name="date" id="installation" required>
+
+
+            <section id="features-section">
+                <p>Which features did you find useful in the product?</p>
+                <p id="italics">(Check all that apply)</p>
+                <label><input type="checkbox" name="features" id="durability" value="Durability">Durability</label>
+                <label><input type="checkbox" name="features" id="ease" value="Ease of Use">Ease of Use</label>
+                <label><input type="checkbox" name="features" id="performance" value="Performance">Performance</label>
+                <label><input type="checkbox" name="features" id="design" value="Design">Design</label>
+            </section>
+
+
+            <p id="written">Written Review <span class="optional">(Optional)</span></p>
+            <textarea name="writtenReview" id="writtenReview" rows="3"></textarea>
+
+            <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> - Rebekah Gardner - Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
