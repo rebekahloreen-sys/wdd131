@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/cake-shop.css">
+    <link rel="stylesheet" type="text/css" href="styles/cake-shop-large.css">
+    <script src="scripts/cake-shop.js" defer></script>
+    <title>Cake Shop</title>
+    <meta name="description" content="Custom cake shop main page">
+    <meta name="author" content="Rebekah Gardner">
+
+    <!-- Lobster two -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="hero-header">
+        <div id="logo-title">
+            <img class="POP-logo" src="images/POP-logo.webp" alt="POP Logo" loading="lazy">
+            <h1>Custom Pop Cakes</h1>
+        </div>
+    
+        <button id="menu" aria-label="Menu">☰</button>
+    
+        <nav>
+            <ul id="mobile-nav">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="questions.html">Questions</a></li>
+                <li><a href="order.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="hero-img">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/wide-hero.jpeg">
+            
+                <img src="images/mobile_hero.jpeg" alt="Woman icing a cake">
+            </picture>
+        
+            <h1>Cakes made with a bit of a <span id="pop">POP!</span></h1>
+        </div>
+
+        <a id="order-button" href="order.html">Order me!</a>
+
+        <div id="photo-div">
+            <img src="images/mobile-custom-1.webp" alt="Picture of a cake in the shape of a cactus" loading="lazy">
+            <img src="images/mobile-custom-2.webp" alt="Picture of a white and blue ocean cake with gold accents" loading="lazy">
+            <img src="images/mobile-custom-3.webp" alt="Picture of a cake with excavators" loading="lazy">
+        </div>
+
+
+        <div class="testimonial-carousel">
+            <h2>Customer Testimonials:</h2>
+            <div class="testimonial active">
+                <p>“The cake was absolutely stunning and tasted even better. Highly recommended!”</p>
+                <h4>- Sarah L.</h4>
+            </div>
+        
+            <div class="testimonial">
+                <p>“Amazing attention to detail. My custom birthday cake was perfect!”</p>
+                <h4>- Daniel R.</h4>
+            </div>
+        
+            <div class="testimonial">
+                <p>“Fast, friendly, and SO delicious. I'll definitely be ordering again!”</p>
+                <h4>- Emily P.</h4>
+            </div>
+        
+            <div class="carousel-buttons">
+                <button id="prev">⎨</button>
+                <button id="next">⎬</button>
+            </div>
+        </div>
+        <p id="spacer"></p>
+
+    </main>
+    <footer>
+        <ul id="footer-list">
+            <li class="left-group">
+                <img class="POP-logo" src="images/POP-logo.webp" alt="POP Logo" loading="lazy">
+                
+            </li>
+        
+            <li id="centered">
+                <span class="liner">|</span>
+                <a href="order.html">Contact us!</a> 
+                <span class="liner">|</span>
+            </li>
+        
+            <li class="right-group">
+                
+                <a href="http://facebook.com"><img src="images/face-logo.webp" alt="" loading="lazy"></a>
+                <a href="http://instagram.com"><img src="images/insta-logo.webp" alt="" loading="lazy"></a>
+                <a href="http://tiktok.com"><img src="images/tiktok-logo.webp" alt="" loading="lazy"></a>
+                <a href="http://youtube.com"><img src="images/youtube-logo.webp" alt="" loading="lazy"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

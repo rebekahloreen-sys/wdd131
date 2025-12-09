@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/cake-shop.css">
+    <link rel="stylesheet" type="text/css" href="styles/cake-order.css">
+    <link rel="stylesheet" type="text/css" href="styles/cake-shop-large.css">
+    <script src="scripts/cake-shop.js" defer></script>
+    <title>Cake Shop Order sheet</title>
+    <meta name="description" content="The page where you order a cake">
+    <meta name="author" content="Rebekah Gardner">
+
+    <!-- Lobster two -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="hero-header">
+        <div id="logo-title">
+            <img class="POP-logo" src="images/POP-logo.webp" alt="POP Logo">
+            <h1>Custom Pop Cakes</h1>
+        </div>
+        <button id="menu" aria-label="Menu">☰</button>
+        <nav>
+            <ul id="mobile-nav">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="questions.html">Questions</a></li>
+                <li><a href="order.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for="name">*Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">*Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">*Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cake Details</legend>
+                <label for="cakeSize">*Cake Size (Inches 4-12)</label>
+                <input type="number" id="cakeSize" name="cakeSize" min="4" max="12" required>
+
+                <label for="cakeLayers">*Cake layers (1-5)</label>
+                <input type="number" id="cakeLayers" name="cakeLayers" min="1" max="5" required>
+
+                <label for="cakeFlavor">*Cake Flavor:</label>
+                <select name="cakeFlavor" id="cakeFlavor" required>
+                    <option value="">Please Select...</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="redvelvet">Red Velvet</option>
+                    <option value="lemon">Lemon</option>
+                </select>
+
+                <label for="frostingFlavor">*Frosting Flavor:</label>
+                <select name="frostingFlavor" id="frostingFlavor" required>
+                    <option value="">Please Select...</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="creamCheese">Cream Cheese</option>
+                    <option value="raspberry">Raspberry</option>
+
+                </select>
+
+                <label for="cakeColor">Cake Color</label>
+                <p>(Reminder that I may need to use fondant)</p>
+                <input type="text" id="cakeColor" name="cakeColor">
+
+                <label for="customMessage">Special Requests / Notes:</label>
+                <textarea id="customMessage" name="customMessage" rows="4" placeholder="e.g., color patterns, decorations"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Info</legend>
+                <label for="deliveryDate">Delivery/Pickup Date:</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            
+                <label>Delivery</label>
+                <input type="radio" id="pickup" name="deliveryOption" value="pickup" required>
+                
+                <label for="pickup">Pickup at 723 W Lancaster Blvd, Lancaster, CA 93534</label>
+                <input type="radio" id="delivery" name="deliveryOption" value="delivery">
+                    
+                
+                
+                <div id="delivery-options">
+                    <label for="address">Address (required for delivery):</label>
+                    <p>(Delivery +$20)</p>  
+                    <input type="text" id="address" name="address">
+                </div>
+            </fieldset>
+
+            <button type="submit">Order now!</button>
+
+        </form>
+    </main>
+    <footer>
+        <ul id="footer-list">
+            <li class="left-group">
+                <img class="POP-logo" src="images/POP-logo.webp" alt="" loading="lazy">
+                
+            </li>
+        
+            <li id="centered">
+                <span class="liner">|</span>
+                <a href="questions.html">Contact us!</a> 
+                <span class="liner">|</span>
+            </li>
+        
+            <li class="right-group">
+                
+                <a href="http://facebook.com"><img src="images/face-logo.webp" alt="" loading="lazy"></a>
+                <a href="http://instagram.com"><img src="images/insta-logo.webp" alt="" loading="lazy"></a>
+                <a href="http://tiktok.com"><img src="images/tiktok-logo.webp" alt="" loading="lazy"></a>
+                <a href="http://youtube.com"><img src="images/youtube-logo.webp" alt="" loading="lazy"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

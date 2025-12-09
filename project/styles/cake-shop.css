@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #feebd8;
+    --secondary-color: #b50042;
+    --accent-color-1: #402103;
+    --accent-color-2: #fccfcf;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Lobster Two', cursive;
+}
+
+p, li {
+    font-family: 'Nunito', sans-serif;
+}
+header, footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+}
+#hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    position: relative;
+}
+#logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+#hero-header h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--accent-color-1);
+    cursor: pointer;
+}
+#mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;    
+    left: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    color: var(--accent-color-2);
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+#mobile-nav.open {
+    display: block;
+}
+
+#mobile-nav li {
+    padding: 10px;
+    list-style: none;
+}
+#mobile-nav li a {
+    color: var(--accent-color-2);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+#mobile-nav li:hover{
+    background-color: #b83a69;
+    color: #faa0a0;
+}
+nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+main {
+    background-color: var(--primary-color);
+    color: var(--accent-color-1);
+    text-align: center;
+}
+#hero-img {
+    position: relative;
+}
+#hero-img img{
+    width: 100%;
+    border-top: 5px solid var(--accent-color-1);
+    margin-bottom: 50px;
+    border-bottom: 5px solid var(--accent-color-1);
+}
+#pop {
+    color: #ff186d;
+    font-weight: bold;
+}
+#hero-img h1 {
+    position: absolute;
+    bottom: 400px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: lighter;
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+}
+#photo-div img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 300px;
+    border: 5px solid var(--accent-color-1);
+}
+a {
+    text-decoration: none;
+    color: var(--accent-color-2);
+}
+
+.testimonial-carousel {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffdebe;
+    color: var(--accent-color-1);
+    position: relative;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.testimonial {
+    display: none;
+    opacity: 0;
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+.carousel-buttons {
+    margin-top: 15px;
+}
+
+.carousel-buttons button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.carousel-buttons button:hover {
+    opacity: 0.8;
+}
+#order-button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 3px solid var(--accent-color-1);
+    
+}
+#order-button:hover {
+    opacity: 0.8;
+}
+footer {
+    display: flex;
+}
+.POP-logo {
+    width: 100px;
+    height: auto;
+}
+
+#footer-list {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-items: center;
+}
+.left-group {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.right-group {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+.right-group a:hover {
+    opacity: 0.8;
+}
+.liner {
+    font-size: 3rem;
+    align-items: center;
+}
+#centered {
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    font-size: xx-large;
+    line-height: 2.9;
+}
+#centered a {
+    padding: 10px;
+}
+#centered a:hover {
+    background-color: #b83a69;
+    color: #ffd7d7;
+}
+#spacer {
+    padding: 10px;
+}
+
+footer img{
+    display: block;
+    width: 100%;
+}
